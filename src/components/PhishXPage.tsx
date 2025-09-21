@@ -80,7 +80,7 @@ export default function PhishXPage() {
         )}
       </div>
        <footer className="py-8 text-center text-muted-foreground text-sm">
-        Built for the Hackathon with Firebase & Genkit.
+        Built by I8H
       </footer>
     </main>
   );
