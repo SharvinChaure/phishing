@@ -73,7 +73,7 @@ Based on this information, provide:
 4.  A concise summary explaining why the URL is potentially phishing, highlighting the most important factors.
 
 Make sure the response is valid JSON.
-`, // Make sure the response is valid JSON.
+`,
 });
 
 const scorePhishFlow = ai.defineFlow(
