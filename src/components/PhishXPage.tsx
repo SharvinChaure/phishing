@@ -1,7 +1,7 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
-import { useEffect } from "react";
+import { useActionState, useEffect } from "react";
+import { useFormStatus } from "react-dom";
 import { scanUrlAction } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -32,7 +32,7 @@ function SubmitButton() {
 }
 
 export default function PhishXPage() {
-  const [state, formAction] = useFormState(scanUrlAction, initialState);
+  const [state, formAction] = useActionState(scanUrlAction, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
